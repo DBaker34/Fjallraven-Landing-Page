@@ -1,0 +1,218 @@
+$yellow: #edb62e;
+$red: #d31e25;
+
+//media query size
+$small: 1050px;
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 0% 1fr 1fr 0%;
+    grid-template-rows: 20% 1fr 20%;
+
+    @media only screen and (max-width: $small) {
+        grid-template-rows: 400px 350px 300px 300px ;
+    }
+
+    header {
+        grid-area: 1 / 2 / 1 / 4;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+
+        @media only screen and (max-width: $small) {
+            grid-template-rows: .5fr 1fr;
+        }
+
+        img {
+            width: 50%;
+            grid-area: 1 / 1 / 1 / 1;
+            margin: auto;
+
+            @media only screen and (max-width: $small) {
+                width: 50%;
+                grid-area: 1 / 1 / 1 / -1;
+            }
+        }
+
+        nav {
+            grid-area: 1 / 2 / 1 / 2;
+            margin: auto auto auto 0;
+
+            @media only screen and (max-width: $small) {
+                margin: 0;
+                text-align: center;
+                grid-area: 2 / 1 / 2 / -1;
+            }
+            
+
+            ul{
+                list-style-type: none;
+            }
+
+            li {
+                color: white;
+                font-size: 20px;
+                margin: 25px;
+                display: inline;
+
+                @media only screen and (max-width: $small) {
+                    display: block;
+                    background-color: #d31e25;
+                    padding: 10px;
+                    border-radius: 50px;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+    
+
+    #price {
+        grid-area: 2 / 2 / 2 / 2;
+
+        text-align: left;
+        margin: auto;
+        width: 40%;
+
+        @media only screen and (max-width: $small) {
+            grid-area: 2 / 3 / 2 / 3;
+            width: 80%;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 80px;
+            color: white;
+            margin: 0px;
+            width: 100%;
+            padding-right: 20px;
+
+            @media only screen and (max-width: $small) {
+                font-size: 50px;
+            }
+        }
+
+        h3 {
+            font-size: 40px;
+        }
+
+        p {
+            line-height: 25px;
+            color: #fff;
+        }
+    }
+
+    #parallax {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-area: 2 / 1 / 2 / -1;
+        width: 100%;
+        height: 100%;
+
+        @media only screen and (max-width: $small) {
+            width: 50%;
+            grid-area: 2 / 1 / 2 / -1;
+        }
+
+        .layer {
+            position: absolute;
+        }
+
+        #yellowpack {
+            width: 100%;
+
+            @media only screen and (max-width: $small) {
+                width: 250px;
+            }
+        }
+
+        #bluepack {
+            width: 500px;
+
+            @media only screen and (max-width: $small) {
+                width: 350px;
+            }
+        }
+
+        #redpack {
+            width: 600px;
+
+            @media only screen and (max-width: $small) {
+                width: 450px;
+            }
+        }
+
+        .pack {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+    }
+
+    #colors {
+        grid-area: 2 / 3 / 2 / 3;
+        margin: auto;
+
+        @media only screen and (max-width: $small) {
+            grid-area: 3 / 1 / 3 / -1;
+        }
+
+        .dot {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .dot:hover {
+            cursor: pointer;
+        }
+
+        .active {
+            background-color: bl;
+        }
+
+        #yellowdot {
+            background-color: yellow;
+        }
+
+
+        #reddot {
+            background-color: red;
+        }
+
+        #bluedot {
+            background-color: blue;
+        }
+
+        h3 {
+            text-align: center;
+            color: white;
+            background-color: $red;
+            padding: 20px 40px;
+            border-radius: 40px;
+        }
+
+
+    }
+
+    footer {
+        grid-area: 3 / 1 / 3 / -1;
+    }
+    
+}

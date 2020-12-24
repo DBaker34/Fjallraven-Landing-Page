@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Fjallraven Landing Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/fjallraven.css">
+    </head>
+    <body>
+
+
+        <div id="container">
+
+            <header>
+                <img src="images/logo.png">
+
+                <nav>
+                    <ul>
+                        <li><a href="https://www.fjallraven.com/"> Home </a></li>
+                        <li><a href="https://www.fjallraven.com/us/en-us/men"> Men </a></li>
+                        <li><a href="https://www.fjallraven.com/us/en-us/women"> Women </a> </li>
+                        <li><a href="https://www.fjallraven.com/us/en-us/bags-gear"> Bags &amp; Gear </a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section id="price">
+                <h1> KÅNKEN </h1>
+                <h3> $80.00 </h3>
+                <p> Classic Kånken backpack in hard-wearing 
+                    Vinylon fabric with a zip that opens the entire main compartment. 
+                    Removable seat cushion, small front pocket, 
+                    simple shoulder straps and handles at the top. </p>
+            </section>
+
+            <div id="parallax">
+                <div class="layer" data-depth=".25">
+                    <img id='yellowpack' class="pack active" src="images/yellow.png">
+                    <img id="bluepack" class="pack" src="images/blue.png">
+                    <img id="redpack" class="pack" src="images/red.png">
+                </div>
+            </div>
+
+            <section id="colors">
+                <span class="dot" id="yellowdot"></span>
+                <span class="dot" id="bluedot"></span>
+                <span class="dot" id="reddot"></span>
+
+                <h3> Shop Now </h3>
+            </section>
+
+            <footer>
+                
+            </footer>
+
+        </div>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="js/fjallraven.js" async defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+        <script type="text/javascript">
+            const scene = document.getElementById('parallax');
+            const parallax = new Parallax(scene);
+        </script>
+    </body>
+</html>

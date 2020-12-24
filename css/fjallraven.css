@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+#container {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 0% 1fr 1fr 0%;
+  grid-template-rows: 20% 1fr 20%; }
+  @media only screen and (max-width: 1050px) {
+    #container {
+      grid-template-rows: 400px 350px 300px 300px; } }
+  #container header {
+    grid-area: 1 / 2 / 1 / 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr; }
+    @media only screen and (max-width: 1050px) {
+      #container header {
+        grid-template-rows: .5fr 1fr; } }
+    #container header img {
+      width: 50%;
+      grid-area: 1 / 1 / 1 / 1;
+      margin: auto; }
+      @media only screen and (max-width: 1050px) {
+        #container header img {
+          width: 50%;
+          grid-area: 1 / 1 / 1 / -1; } }
+    #container header nav {
+      grid-area: 1 / 2 / 1 / 2;
+      margin: auto auto auto 0; }
+      @media only screen and (max-width: 1050px) {
+        #container header nav {
+          margin: 0;
+          text-align: center;
+          grid-area: 2 / 1 / 2 / -1; } }
+      #container header nav ul {
+        list-style-type: none; }
+      #container header nav li {
+        color: white;
+        font-size: 20px;
+        margin: 25px;
+        display: inline; }
+        @media only screen and (max-width: 1050px) {
+          #container header nav li {
+            display: block;
+            background-color: #d31e25;
+            padding: 10px;
+            border-radius: 50px; } }
+      #container header nav a {
+        text-decoration: none;
+        color: #fff; }
+  #container #price {
+    grid-area: 2 / 2 / 2 / 2;
+    text-align: left;
+    margin: auto;
+    width: 40%; }
+    @media only screen and (max-width: 1050px) {
+      #container #price {
+        grid-area: 2 / 3 / 2 / 3;
+        width: 80%;
+        margin: 0; } }
+    #container #price h1 {
+      font-size: 80px;
+      color: white;
+      margin: 0px;
+      width: 100%;
+      padding-right: 20px; }
+      @media only screen and (max-width: 1050px) {
+        #container #price h1 {
+          font-size: 50px; } }
+    #container #price h3 {
+      font-size: 40px; }
+    #container #price p {
+      line-height: 25px;
+      color: #fff; }
+  #container #parallax {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: 2 / 1 / 2 / -1;
+    width: 100%;
+    height: 100%; }
+    @media only screen and (max-width: 1050px) {
+      #container #parallax {
+        width: 50%;
+        grid-area: 2 / 1 / 2 / -1; } }
+    #container #parallax .layer {
+      position: absolute; }
+    #container #parallax #yellowpack {
+      width: 100%; }
+      @media only screen and (max-width: 1050px) {
+        #container #parallax #yellowpack {
+          width: 250px; } }
+    #container #parallax #bluepack {
+      width: 500px; }
+      @media only screen and (max-width: 1050px) {
+        #container #parallax #bluepack {
+          width: 350px; } }
+    #container #parallax #redpack {
+      width: 600px; }
+      @media only screen and (max-width: 1050px) {
+        #container #parallax #redpack {
+          width: 450px; } }
+    #container #parallax .pack {
+      display: none; }
+    #container #parallax .active {
+      display: block; }
+  #container #colors {
+    grid-area: 2 / 3 / 2 / 3;
+    margin: auto; }
+    @media only screen and (max-width: 1050px) {
+      #container #colors {
+        grid-area: 3 / 1 / 3 / -1; } }
+    #container #colors .dot {
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      display: inline-block;
+      text-align: center; }
+    #container #colors .dot:hover {
+      cursor: pointer; }
+    #container #colors .active {
+      background-color: bl; }
+    #container #colors #yellowdot {
+      background-color: yellow; }
+    #container #colors #reddot {
+      background-color: red; }
+    #container #colors #bluedot {
+      background-color: blue; }
+    #container #colors h3 {
+      text-align: center;
+      color: white;
+      background-color: #d31e25;
+      padding: 20px 40px;
+      border-radius: 40px; }
+  #container footer {
+    grid-area: 3 / 1 / 3 / -1; }
+
+/*# sourceMappingURL=fjallraven.css.map */
